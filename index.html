@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="style.css">
+   <title>Cats Type</title>
+</head>
+<body>
+
+   <header>
+      <h1>Cats Type</h1>
+      <p>Explore popular pet cat breeds from around the world.</p>
+   </header>
+
+   <div class="swiper">
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide-persian">
+            <img class="slide-image" src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop&auto=format" alt="Persian cat">
+            <div class="slide-content">
+               <h2>Persian</h2>
+               <p>Known for their long, silky coats and calm temperament, Persians are one of the most popular lap cats. They thrive in quiet, indoor environments and love gentle companionship.</p>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide-siamese">
+            <img class="slide-image" src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&h=400&fit=crop&auto=format" alt="Siamese cat">
+            <div class="slide-content">
+               <h2>Siamese</h2>
+               <p>Siamese cats are highly vocal and social, forming strong bonds with their owners. Their striking blue eyes and colour-pointed fur make them instantly recognisable.</p>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide-mainecoon">
+            <img class="slide-image" src="https://images.unsplash.com/photo-1615497001839-b0a0eac3274c?w=400&h=400&fit=crop&auto=format" alt="Maine Coon cat">
+            <div class="slide-content">
+               <h2>Maine Coon</h2>
+               <p>One of the largest domestic cat breeds, Maine Coons are friendly, playful, and intelligent. Their thick, shaggy coats were made for cold climates and outdoor adventures.</p>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide-scottishfold">
+            <img class="slide-image" src="https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?w=400&h=400&fit=crop&auto=format" alt="Scottish Fold cat">
+            <div class="slide-content">
+               <h2>Scottish Fold</h2>
+               <p>Famous for their unique folded ears and round faces, Scottish Folds are gentle and adaptable. They get along well with children and other pets, making them ideal family cats.</p>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+   </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script>
+      const swiper = new Swiper('.swiper', {
+         loop: true,
+         autoplay: {
+            delay: 2000,
+         },
+         pagination: {
+            el: '.swiper-pagination',
+         },
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+         },
+      });
+   </script>
+
+</body>
+</html>
